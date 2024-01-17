@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="appName">
+                    <h1>GAIL Quiz</h1>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="rightSide">
+                    <div class="userProfile profile">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="user">Rajesh Kumar</div>
+                    </div>
+                    <div class="userProfile logout"><i class="fa-solid fa-right-from-bracket"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="fourBoxes">
+                    <div class="box">
+                        <div class="heading">Active quiz</div>
+                        <div class="count">03</div>
+                        <div class="moreInfo"><a href="#">More info <i class="fa-regular fa-circle-right"></i></a></div>
+                    </div>
+                    <div class="box">
+                        <div class="heading">Expired quiz</div>
+                        <div class="count">40</div>
+                        <div class="moreInfo"><a href="#">More info <i class="fa-regular fa-circle-right"></i></a></div>
+                    </div>
+                    <div class="box">
+                        <div class="heading">Upcoming quiz</div>
+                        <div class="count">12</div>
+                        <div class="moreInfo"><a href="#">More info <i class="fa-regular fa-circle-right"></i></a></div>
+                    </div>
+                    <div class="box">
+                        <div class="heading">test quiz</div>
+                        <div class="count">09</div>
+                        <div class="moreInfo"><a href="#">More info <i class="fa-regular fa-circle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    GAIL (India) Limited All rights reserved.
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog addNewModal">
+    <div class="modal-content">
+    <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add New</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+    <div class="modal-body">
+        
+        
+        <div class="input-box active-grey">
+            <label class="input-label">Location</label>
+            <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                <option value="-1"></option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <div class="input-box active-grey">
+            <label class="input-label">Title</label>
+            <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                <option value="-1"></option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <div class="input-box active-grey">
+            <label class="input-label">Department</label>
+            <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                <option value="-1"></option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <div class="input-box active-grey">
+            <label class="input-label">Start Date</label>
+            <input type="date" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+        </div>
+
+        <div class="input-box active-grey">
+            <label class="input-label">End Date</label>
+            <input type="date" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+        </div>
+
+        <div class="input-box active-grey">
+            <label class="input-label">Admin</label>
+            <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                <option value="-1"></option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+
+        <div class="subBtn">
+            <a href="#">Submit</a>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
